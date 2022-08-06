@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitob magazin</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Arial';
+            background-color: whitesmoke;
+            caret-color: white;
+            
+        }
+        .sd{
+            display: flex;
+            width: 100%;
+            height: 143.5vh;
+            border: 1px solid whitesmoke;
+            position: absolute;
+        }
+        .container{
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: first baseline;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 80%;
+            height: 130vh;
+            border: 1px solid whitesmoke;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: whitesmoke;
+        }
+        .main{
+
+            width: 250px;
+            height: 390px;
+            border: 1px solid whitesmoke;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 50px;
+            border-radius: 10px;
+            box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+            background-color: white;
+            text-align: center;
+        } 
+        
+        .main_1{
+        width: 250px;
+        border: 1px solid whitesmoke;
+        height: 390px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 50px;
+        border-radius: 10px;
+        box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+        background-color: white;
+        text-align: center;
+} 
+.main_2{
+        width: 250px;
+        border: 1px solid whitesmoke;
+        height: 390px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 50px;
+        border-radius: 10px;
+        box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+        background-color: white;
+} 
+.main_3{
+        width: 250px;
+        border: 1px solid whitesmoke;
+        height: 390px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 50px;
+        border-radius: 10px;
+        box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+        background-color: white;
+} 
+.main_4{
+        width: 250px;
+        text-align: center;
+        border: 1px solid whitesmoke;
+        height: 390px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 50px;
+        border-radius: 10px;
+        box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+        background-color: white;
+} 
+.main_5{
+        width: 250px;
+        text-align: center;
+        border: 1px solid whitesmoke;
+        height: 390px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 50px;
+        border-radius: 10px;
+        box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+        background-color: white;
+} 
+.main_6{
+        width: 250px;
+        text-align: center;
+        border: 1px solid whitesmoke;
+        height: 390px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 50px;
+        border-radius: 10px;
+        box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+        background-color: white;
+} 
+#main{
+
+width: 250px;
+height: 390px;
+border: 1px solid whitesmoke;
+padding: 10px;
+text-align: center;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+
+#main_1{
+width: 250px;
+border: 1px solid whitesmoke;
+height: 390px;
+padding: 10px;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+text-align: center;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+#main_2{
+width: 250px;
+border: 1px solid whitesmoke;
+height: 390px;
+text-align: center;
+padding: 10px;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+#main_3{
+width: 250px;
+text-align: center;
+border: 1px solid whitesmoke;
+height: 390px;
+padding: 10px;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+#main_4{
+    text-align: center;
+width: 250px;
+border: 1px solid whitesmoke;
+height: 390px;
+padding: 10px;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+#main_5{
+width: 250px;
+border: 1px solid whitesmoke;
+height: 390px;
+text-align: center;
+padding: 10px;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+#main_6{
+width: 250px;
+border: 1px solid whitesmoke;
+height: 390px;
+padding: 10px;
+text-align: center;
+display: none;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 10px 50px;
+border-radius: 10px;
+box-shadow: 10px 0  15px 5px rgb(100, 86, 86);
+background-color: white;
+} 
+        p{
+           padding: 10px;
+           background-color: rgb(83, 202, 83);
+           border-radius: 5px;
+           text-align: center ;
+        }
+       
+        p:active{
+            box-shadow:0px 0px 10px 2px black;
+        }
+        .sfat{
+            
+            width: 100px;
+            height: 100px;
+            border:1px solid whitesmoke;
+             margin: 30px 30px; 
+            
+            
+        }
+        .img{
+            transition: .6s;
+        width: 100px ;
+        height: 100px;
+        }
+        .img:active{
+            width: 110px;
+            height: 110px;
+        }
+        .x{
+            display: none;
+            position: absolute;
+            z-index: 20;
+            width: 85%;
+            flex-direction: column;
+            border-radius: 50px;
+            margin: 30px 80px;
+            background-color: white;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            justify-content: first baseline;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        h1{
+            background-color: white;
+            width: 20%;
+            border: 1px solid white;
+            margin: 0px auto;
+        }
+        span{
+            margin:10px 93% ;
+            font-size: 50px;
+            background-color:white; 
+        font-weight: bold;}
+            span:active{
+                text-shadow:0px 0px 10px 5px black ;
+            }
+            .mg{
+                width: 85%;
+                height: 300px;
+            }
+            .mgg{
+                width: 85%;
+                height: 300px;
+            }
+            .kor{
+                padding: 10px;
+           background-color: red;
+           border-radius: 5px;
+           text-align: center ;
+            }
+            .son{
+                width: 30px;
+                height: 30px;
+                border: 1px solid red;
+                background-color: black;
+                z-index: 1000;
+                position: absolute;
+                top: 10px;
+
+            }
+            a{
+                text-decoration: none;
+                color:white ;
+                font-weight: bold;
+                font-family: fantasy;
+                font-size: 20px;
+                position: absolute;
+                top: 55px;
+                right: 82px;
+                background: none;
+            }
+            a:hover{
+                color: green;
+            }
+            .p_1{
+                background: none;
+                font-size: 11px;
+                position: absolute;
+                top: 120px;
+                right: 30px;
+                color: red;
+            }
+            .red{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                cursor: pointer;
+                width: 80%;
+                height: 50px;
+               
+                text-align: center;
+                background-color: whitesmoke;
+            }
+            .rtt{
+               
+
+                background-color: whitesmoke;
+                width: 80%;
+                height: 50px; 
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+         
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="sd">
+    
+    <div class="container">
+        <div class="red"> <h1 class="rtt">KITOBLAR OLAMI</h1></div>
+        <div class="main"><img class="mg" src="1.png"     
+            alt=""><p onclick="go_2()">Добфвитъ в Карзину</p></div>
+        <div class="main_1"><img class="mg" src="2.jpg" alt=""><p onclick="go_3()">Добвитъ в Карзину</p></div>
+        <div class="main_2"><img class="mg" src="3.jpg" alt=""><p onclick="go_4()">Добвитъ в Карзину</p></div>
+        <div class="main_3"><img class="mg" src="4.jpg" alt=""><p onclick="go_5()">Добвитъ в Карзину</p></div>
+        <div class="main_4"><img class="mg" src="5.jpg" alt=""><p onclick="go_6()">Добвитъ в Карзину</p></div>
+        <div class="main_5"><img class="mg" src="6.jpg" height="250px" alt=""><p onclick="go_7()"> Добфвитъ в Карзину</p></div>
+    </div>
+    <div class="sfat"><img class="img" onclick="go()" src="01.png" alt=""> <div id="son"><a href="">0</a></div></div>
+     <div class="sdd"> <p class="p_1">hech narsa yuq </p></div>
+   
+</div>
+<div class="x" id="paket">
+    <span onclick="go_1()"  >x</span>
+    <h1>Sotip olingan</h1>
+    <div  id="main_1"><img class="mgg" src="1.png"     
+         alt=""><p onclick="go_8()" class="kor">udalit is karzinku</p></div>
+        <div  id="main_2"><img class="mgg" src="2.jpg" alt=""><p class="kor" onclick="go_9()">udalit is karzinku</p></div>
+        <div  id="main_3"><img class="mgg" src="3.jpg" alt=""><p class="kor" onclick="go_10()">udalit is karzinku</p></div>
+        <div  id="main_4"><img class="mgg" src="4.jpg" alt=""><p class="kor" onclick="go_11()">udalit is karzinku</p></div>
+        <div  id="main_5"><img class="mgg" src="5.jpg" alt=""><p class="kor" onclick="go_12()">udalit is karzinku</p></div>
+        <div  id="main_6"><img class="mgg" src="6.jpg" height="250px" alt=""><p onclick="go_13()" class="kor"> udalit is karzinku</p></div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    let paket=document.querySelector('#paket')
+    let span=document.querySelector('span')
+    let mainc=document.querySelector('.main')
+    let maini_1=document.querySelector('#main_1')
+    let mainc_1=document.querySelector('.main_1')
+    let maini_2=document.querySelector('#main_2')
+    let mainc_2=document.querySelector('.main_2')
+    let maini_3=document.querySelector('#main_3')
+    let mainc_3=document.querySelector('.main_3')
+    let maini_4=document.querySelector('#main_4')
+    let mainc_4=document.querySelector('.main_4')
+    let maini_5=document.querySelector('#main_5')
+    let mainc_5=document.querySelector('.main_5')
+    let maini_6=document.querySelector('#main_6')
+    function go(){
+        paket.style.cssText ='display:inline-block'
+    }
+    function go_1(){
+        paket.style.cssText ='display:none'
+    }
+    function go_2(){
+       mainc.style.cssText ='display:none'
+       maini_1.style.cssText ='display:inline-block'
+
+    }
+    function go_3(){
+       mainc_1.style.cssText ='display:none'
+       maini_2.style.cssText ='display:inline-block'
+
+    }
+    function go_4(){
+       mainc_2.style.cssText ='display:none'
+       maini_3.style.cssText ='display:inline-block'
+
+    }
+    function go_5(){
+       mainc_3.style.cssText ='display:none'
+       maini_4.style.cssText ='display:inline-block'
+
+    }
+    function go_6(){
+       mainc_4.style.cssText ='display:none'
+       maini_5.style.cssText ='display:inline-block'
+
+    }
+    function go_7(){
+       mainc_5.style.cssText ='display:none'
+       maini_6.style.cssText ='display:inline-block'
+
+    }
+    function go_8(){
+       mainc.style.cssText ='display:inline-block'
+       maini_1.style.cssText ='display:none'
+
+    }
+    function go_9(){
+       mainc_1.style.cssText ='display:inline-block'
+       maini_2.style.cssText ='display:none'
+
+    }
+    function go_10(){
+       mainc_2.style.cssText ='display:inline-block'
+       maini_3.style.cssText ='display:none'
+
+    }
+    function go_11(){
+       mainc_3.style.cssText ='display:inline-block'
+       maini_4.style.cssText ='display:none'
+
+    }
+    function go_12(){
+       mainc_4.style.cssText ='display:inline-block'
+       maini_5.style.cssText ='display:none'
+
+    }
+    function go_13(){
+       mainc_5.style.cssText ='display:inline-block'
+       maini_6.style.cssText ='display:none'
+
+    }
+    
+
+</script>
+</body>
+</html>
